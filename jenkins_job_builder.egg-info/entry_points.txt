@@ -1,0 +1,54 @@
+[jenkins_jobs.publishers]
+raw = jenkins_jobs.modules.general:raw
+
+[jenkins_jobs.projects]
+externaljob = jenkins_jobs.modules.project_externaljob:ExternalJob
+matrix = jenkins_jobs.modules.project_matrix:Matrix
+workflow = jenkins_jobs.modules.project_workflow:Workflow
+freestyle = jenkins_jobs.modules.project_freestyle:Freestyle
+flow = jenkins_jobs.modules.project_flow:Flow
+maven = jenkins_jobs.modules.project_maven:Maven
+multijob = jenkins_jobs.modules.project_multijob:MultiJob
+
+[jenkins_jobs.modules]
+scm = jenkins_jobs.modules.scm:SCM
+publishers = jenkins_jobs.modules.publishers:Publishers
+zuul = jenkins_jobs.modules.zuul:Zuul
+parameters = jenkins_jobs.modules.parameters:Parameters
+triggers = jenkins_jobs.modules.triggers:Triggers
+general = jenkins_jobs.modules.general:General
+notifications = jenkins_jobs.modules.notifications:Notifications
+wrappers = jenkins_jobs.modules.wrappers:Wrappers
+reporters = jenkins_jobs.modules.reporters:Reporters
+hipchat = jenkins_jobs.modules.hipchat_notif:HipChat
+builders = jenkins_jobs.modules.builders:Builders
+properties = jenkins_jobs.modules.properties:Properties
+metadata = jenkins_jobs.modules.metadata:Metadata
+
+[jenkins_jobs.triggers]
+raw = jenkins_jobs.modules.general:raw
+
+[jenkins_jobs.builders]
+raw = jenkins_jobs.modules.general:raw
+
+[console_scripts]
+jenkins-jobs = jenkins_jobs.cmd:main
+
+[jenkins_jobs.properties]
+raw = jenkins_jobs.modules.general:raw
+
+[jenkins_jobs.scm]
+raw = jenkins_jobs.modules.general:raw
+
+[jenkins_jobs.notifications]
+raw = jenkins_jobs.modules.general:raw
+
+[jenkins_jobs.reporters]
+raw = jenkins_jobs.modules.general:raw
+
+[jenkins_jobs.parameters]
+raw = jenkins_jobs.modules.general:raw
+
+[jenkins_jobs.wrappers]
+raw = jenkins_jobs.modules.general:raw
+
